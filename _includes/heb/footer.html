@@ -1,0 +1,195 @@
+<script src="{{ site.baseurl }}/assets/js/jquery-3.4.1.min.js"></script>
+<script src="{{ site.baseurl }}/assets/js/slick.min.js"></script>
+<script>
+	$(window).scroll(function() {    
+    var scroll = $(window).scrollTop();    
+    if (scroll >= 100) {
+        return $(".header").addClass("header_active");
+		}else{
+			return $(".header").removeClass("header_active");
+		}
+	});
+	// $('.slct-2').click(function () {
+	// 	var dropBlock = $(this).parent().find('.drop-2');
+	// 	if (dropBlock.is(':hidden')) {
+	// 		dropBlock.slideDown();
+	// 		$(this).addClass('active');
+	// 		$('.drop-2').find('li').click(function () {
+	// 			var selectResult = $(this).html();
+	// 			$(this).parent().parent().find('input').val(selectResult);
+	// 			$('.slct-2').removeClass('active').html(selectResult);
+	// 			dropBlock.slideUp();
+	// 		});
+	// 	} else {
+	// 		$(this).removeClass('active');
+	// 		dropBlock.slideUp();
+	// 	}
+	// 	return false;
+	// });
+	$(document).ready(function(){
+		$('.one-time').slick({
+			dots: false,
+			infinite: true,
+			speed: 300,
+			slidesToShow: 2,
+			adaptiveHeight: true,
+			responsive: [
+					{
+					breakpoint: 767,
+					settings: {
+						slidesToShow: 1,
+						slidesToScroll: 1,
+						infinite: true,
+						dots: true,
+						arrows: true
+					}
+				}
+			]
+		});
+		$('.one-time-2').slick({
+			dots: false,
+			infinite: true,
+			speed: 300,
+			slidesToShow: 2,
+			adaptiveHeight: true,
+			responsive: [
+					{
+					breakpoint: 767,
+					settings: {
+						slidesToShow: 1,
+						slidesToScroll: 1,
+						infinite: true,
+						dots: true,
+						arrows: true
+					}
+				}
+			]
+		});
+		$('.resident').slick({
+			dots: false,
+			infinite: true,
+			speed: 300,
+			slidesToShow: 21,
+			adaptiveHeight: true,
+			responsive: [
+					{
+					breakpoint: 767,
+					settings: {
+						slidesToShow: 3,
+						slidesToScroll: 3,
+						infinite: true,
+						dots: true,
+						arrows: true
+					},
+					// breakpoint: 480,
+					// settings: {
+					// 	slidesToShow: 3,
+					// 	slidesToScroll: 3,
+					// 	infinite: true,
+					// 	dots: true,
+					// 	arrows: true
+					// }
+				}
+			]
+		});
+	});
+	
+	$(function(){
+		$('.nav .nav_link_scroll').on('click', function(e){
+			e.preventDefault();
+			var selector = $(this).attr('href');
+			var section = $(selector);
+			$('html, body').animate({
+				scrollTop: section.offset().top - 68
+			}, 400);
+		})
+
+		$('.btn-up').on('click', function(e){
+			e.preventDefault();
+			$('html, body').animate({
+				scrollTop: 0
+			}, 400);
+		})
+		scrolling();
+		activeItemMenu();
+
+		$(window).on('scroll', function(e){
+				activeItemMenu();
+				scrolling();
+			});
+		});
+
+		$('.service_content_maps_cont_list1 img').on('click', function(){
+			 $(".service_content_maps_cont_list1").addClass("service_content_maps_cont_list_active");
+	 
+		})
+		$('.service_content_maps_cont_list2 img').on('click', function(){
+			 $(".service_content_maps_cont_list2").addClass("service_content_maps_cont_list_active");
+	 
+		})
+		$('.service_content_maps_cont_list_active_close').on('click', function(){
+			 $(".service_content_maps_cont_list").removeClass("service_content_maps_cont_list_active");
+			 
+		})
+		$('.burger').on('click', function(){
+				$(".nav").addClass("nav_active").slideToggle();
+		})
+		$('.burger').click(function(){
+        	('.burger').toggleClass('opened');
+		});
+         
+
+		function activeItemMenu(){
+			$(".nav_link_scroll").each(function () {
+				var selector = $(this).attr('href');
+				var section = $(selector);
+
+				var windowTop = $(window).scrollTop();
+				var sectionTop = section.offset().top;
+
+					/*console.log(section.offset());
+					console.log(windowTop);
+					console.log(sectionTop);*/
+
+				if(windowTop>sectionTop-150){
+					// $('.nav .nav_link_scroll').removeClass('active').filter(this).addClass('active');
+				};
+			});
+		};
+		function scrolling(){
+			if(scrollY > 100){
+				$('.btn-up').slideDown(400);
+			}
+			else{
+				$('.btn-up').slideUp(400)
+			}
+		};
+
+</script>
+
+<footer class="footer heb">
+		<div class="container">
+			<div class="footer_cont">
+				{% assign data = site.data %}
+				{% assign h_url = data.home-heb %}
+				<a class="logo" href="/"><img class=" lazy-img" src="{{ site.baseurl }}{{h_url.footer_logo}}" alt="Logo"></a>
+				<div class="footer_cont_menu">
+						{% for footer in h_url.footer_nav %}
+							<a class="footer_cont_menu_link" href="{{ footer.list }}">
+								{% if footer.img %}<img src="{{ site.baseurl }}{{ footer.img }}"/>{% endif %}
+								{{ footer.text }}
+							</a>
+						{% endfor %}
+						 
+				</div>
+				<div class="footer_cont_logo">
+					<a class="logo logo-right" href="{{ menu.footer_url-hzahav | default: '/' | relative_url }}">
+						<img class="lazy-img" src="{{ site.baseurl }}{{ menu.footer_logo_img_right | relative_url }}" alt="Logo right"> 
+					</a>
+					<a class="logo logo-right" href="{{ menu.footer_url-right | default: '/' | relative_url }}">
+						<img class="lazy-img" src="{{ site.baseurl }}{{ menu.footer_logo_img_right_new | relative_url }}" alt="Logo right" /> 
+					</a>
+				</div>
+			</div>
+		</div>
+	</footer>

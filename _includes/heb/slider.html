@@ -1,0 +1,19 @@
+{% for slider in src  %}
+    <div class="work_content_slider">
+        <h2 class="work_content_slider_title">{{ slider.title }}</h2>
+        <div class="slider-row">
+            <div class="work_content_slider_top {{ include.class }}">
+                {% for list in slider.list %}
+                    <div>
+                        {% for  items in list.items %}
+                            <div class="work_content_slider_top_list">
+                                <img class="work_content_slider_top_icon" src="{{ site.baseurl }}{{ items.img }}" alt="{{ items.img-alt }}">
+                                <p class="work_content_slider_top_text">{{ items.title }}</p>
+                            </div>
+                        {% endfor %}
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+{% endfor %}

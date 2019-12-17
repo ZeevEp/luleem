@@ -1,0 +1,23 @@
+logo_img:       "./assets/img/Lulleem_logo.svg"
+logo_img_right: "./assets/img/logo-right.svg"
+logo_img_right_new: "./assets/img/new_logo.svg"
+has_nav: true
+url-hzahav: "http://www.hzahav.co.il/"
+url-right: "/"
+
+nav:
+  - list: ["Services","#services"]
+  - list: ["Amenities","#amenities"]
+  - list: ["About","#about"]
+  - list: ["A map","#map"]
+
+
+sub-nav:
+  - list: ["/assets/img/facebook-logo.svg","https://www.facebook.com/Luleem4/"]
+  - list: ["/assets/img/instagram.svg","#home"]
+  - list: ["/assets/img/awaze.svg","https://waze.com/ul/hsv8up44zd"]
+
+
+
+
+

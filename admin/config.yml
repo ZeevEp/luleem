@@ -1,0 +1,200 @@
+backend:
+  name: git-gateway
+  branch: master 
+
+media_folder: 'assets/img'  
+public_folder: "assets/img"
+
+collections:  
+  - name: "pages"
+    label: "Pages"
+    files:
+      - file: "_data/home-en.yml"
+        label: "Home Page"
+        name: "home"
+        fields:
+          - {label: "Logo", name: "logo_img", widget: "image", default: "./assets/img/Lulleem_logo.svg"}
+          - {label: "Logo Right", name: "logo_img_right", widget: "image", default: "./assets/img/logo-right.svg"}
+          - {label: "Logo Right 2", name: "logo_img_right_new", widget: "image", , default: "./assets/img/new_logo.svg"}
+          - {label: "Menu", name: "has_nav", widget: "boolean", default: true}
+          - {label: "Link Logo Right", name: "url-hzahav", widget: "text", default: "http://www.hzahav.co.il/"}
+          - {label: "Link Logo Right2", name: "url-right", widget: "text", default: "/"}
+          - {label: "Nav", name: "nav", widget: "list", fields: [
+              {label: "List item", name: "list", widget: "text"},
+              {label: "List link", name: "list-link", widget: "text"},
+            ]}
+          - {label: "Nav icon", name: "sub-nav", widget: "list", fields: [
+              {label: "List item icon", name: "list", widget: "image"},
+              {label: "List link", name: "list-link", widget: "text"},
+            ]}
+          - {label: "Number Phone", name: "number_phone", widget: "text"  }
+          - {label: "Phone Img", name: "phone-img", widget: "image" }
+          - {label: "Phone Text", name: "phone-text", widget: "text" }
+          - {label: "Home", name: "has_home", widget: "boolean", default: true}
+          - {label: "Home", name: "my_video", widget: "boolean", default: true}
+          - {label: "Video Img", name: "video-img", widget: "image" }
+          - {label: "Video", name: "video", widget: "text" }
+          - {label: "Contact", name: "has_contact", widget: "boolean", default: true}
+          - {label: "Contact", name: "contact", widget: "boolean", default: true}
+          - {label: "Form action", name: "action", widget: "text",  }
+          - {label: "Name", name: "name", widget: "text", default: "name"}
+          - {label: "Phone Nunber", name: "phone-nunber", widget: "text", default: "phone number"}
+          - {label: "Button Text", name: "button-text", widget: "text", default: "Contact us"}
+          - {label: "Form action 2", name: "bottom_action", widget: "text",  }
+          - {label: "Name 2", name: "bottom_name", widget: "text", default: "Your name"}
+          - {label: "Phone Nunber 2", name: "bottom_phone-nunber", widget: "text", default: "Your Phone number"}
+          - {label: "Button Text 2", name: "bottom_button-text", widget: "text", default: "Contact us"}
+          - {label: "Work", name: "has_work", widget: "boolean", default: true}
+          - {label: "Work", name: "work", widget: "boolean", default: true}
+          - {label: "Background Work", name: "bacground", widget: "image"}
+          - {label: "Background Work Logo", name: "work_logo_img", widget: "image"}
+          - {label: "Title Content", name: "title-cont", widget: "markdown"}
+          - {label: "Slider", name: "slider", widget: "list", fields: [
+              {label: "Slider Title", name: "title", widget: "text"},
+              {label: "Slider List", name: "list", widget: "list", fields: [
+                {label: "Slider List Item", name: "items", widget: "list", fields: [
+                  {label: "Img", name: "img", widget: "image"},
+                  {label: "Img alt", name: "img-alt", widget: "text"},
+                  {label: "Title", name: "title", widget: "text"}
+                ]}
+              ]}
+            ]}
+          - {label: "Slider 2", name: "slider-2", widget: "list", fields: [
+              {label: "Slider Title", name: "title", widget: "text"},
+              {label: "Slider List", name: "list", widget: "list", fields: [
+                {label: "Slider List Item", name: "items", widget: "list", fields: [
+                  {label: "Img", name: "img", widget: "image"},
+                  {label: "Img alt", name: "img-alt", widget: "text"},
+                  {label: "Title", name: "title", widget: "text"}
+                ]}
+              ]}
+            ]}
+          - {label: "Service", name: "has_service", widget: "boolean", default: true}
+          - {label: "Service", name: "service-h", widget: "boolean", default: true}
+          - {label: "Background Servuce", name: "background", widget: "image", default: "/assets/img/service_bg.jpg"}
+          - {label: "Service Title", name: "title", widget: "text", default: "our services"}
+          - {label: "Service", name: "service", widget: "list", fields: [
+              {label: "Slider Title", name: "title", widget: "text"},
+              {label: "Service Icon", name: "img", widget: "image"},
+              {label: "Service Icon alt", name: "img-alt", widget: "text"},
+              {label: "Service List Item", name: "list", widget: "list", fields: [
+                {label: "Service Icon", name: "img", widget: "image"},
+                {label: "Service Icon alt", name: "img-alt", widget: "text"},
+                {label: "Service Content", name: "content", widget: "markdown"}
+              ]}
+            ]}
+          - {label: "Location Title", name: "location-title", widget: "text", default: "location"}
+          - {label: "Resident Title", name: "resident-title", widget: "text", default: "Contact us"}
+          - {label: "Resident List", name: "resident", widget: "list", fields: [
+              {label: "Img", name: "img", widget: "image"},
+              {label: "Img alt", name: "img-alt", widget: "text"}
+            ]}
+          - {label: "Сomunity Title", name: "comunity-title", widget: "text", default: "Comunity"}
+          - {label: "Team Title", name: "team-title", widget: "text", default: "the team"}
+          - {label: "Team Content", name: "team-content", widget: "markdown"}
+          - {label: "Footer Logo", name: "footer_logo", widget: "image"}
+          - {label: "Footer Logo right", name: "footer_logo_img_right_new", widget: "image"}
+          - {label: "Footer Logo right 2", name: "footer_logo_img_right", widget: "image"}
+          - {label: "Footer url hzahav", name: "footer_url-hzahav", widget: "text"}
+          - {label: "Footer url", name: "footer_url-right", widget: "text"}
+          - {label: "Footer Nav", name: "footer_nav", widget: "list", fields: [
+              {label: "Nav Link", name: "list", widget: "text"},
+              {label: "Nav Img", name: "img", widget: "image"},
+              {label: "Nav Text", name: "text", widget: "text"}
+            ]}
+  - name: "pages heb"
+    label: "Pages heb"
+    files:
+      - file: "_data/home-heb.yml"
+        label: "Home Page HEB"
+        name: "home"
+        fields:
+          - {label: "Logo", name: "logo_img", widget: "image", default: "./assets/img/Lulleem_logo.svg"}
+          - {label: "Logo Right", name: "logo_img_right", widget: "image", default: "./assets/img/logo-right.svg"}
+          - {label: "Logo Right 2", name: "logo_img_right_new", widget: "image", , default: "./assets/img/new_logo.svg"}
+          - {label: "Menu", name: "has_nav", widget: "boolean", default: true}
+          - {label: "Link Logo Right", name: "url-hzahav", widget: "text", default: "http://www.hzahav.co.il/"}
+          - {label: "Link Logo Right2", name: "url-right", widget: "text", default: "/"}
+          - {label: "Nav", name: "nav", widget: "list", fields: [
+              {label: "List item", name: "list", widget: "text"},
+              {label: "List link", name: "list-link", widget: "text"},
+            ]}
+          - {label: "Nav icon", name: "sub-nav", widget: "list", fields: [
+              {label: "List item icon", name: "list", widget: "image"},
+              {label: "List link", name: "list-link", widget: "text"},
+            ]}
+          - {label: "Number Phone", name: "number_phone", widget: "text"  }
+          - {label: "Phone Img", name: "phone-img", widget: "image" }
+          - {label: "Phone Text", name: "phone-text", widget: "text" }
+          - {label: "Home", name: "has_home", widget: "boolean", default: true}
+          - {label: "Home", name: "my_video", widget: "boolean", default: true}
+          - {label: "Video Img", name: "video-img", widget: "image" }
+          - {label: "Video", name: "video", widget: "text" }
+          - {label: "Contact", name: "has_contact", widget: "boolean", default: true}
+          - {label: "Contact", name: "contact", widget: "boolean", default: true}
+          - {label: "Form action", name: "action", widget: "text",  }
+          - {label: "Name", name: "name", widget: "text", default: "name"}
+          - {label: "Phone Nunber", name: "phone-nunber", widget: "text", default: "phone number"}
+          - {label: "Button Text", name: "button-text", widget: "text", default: "Contact us"}
+          - {label: "Form action 2", name: "bottom_action", widget: "text",  }
+          - {label: "Name 2", name: "bottom_name", widget: "text", default: "Your name"}
+          - {label: "Phone Nunber 2", name: "bottom_phone-nunber", widget: "text", default: "Your Phone number"}
+          - {label: "Button Text 2", name: "bottom_button-text", widget: "text", default: "Contact us"}
+          - {label: "Work", name: "has_work", widget: "boolean", default: true}
+          - {label: "Work", name: "work", widget: "boolean", default: true}
+          - {label: "Background Work", name: "bacground", widget: "image"}
+          - {label: "Background Work Logo", name: "work_logo_img", widget: "image"}
+          - {label: "Title Content", name: "title-cont", widget: "markdown"}
+          - {label: "Slider", name: "slider", widget: "list", fields: [
+              {label: "Slider Title", name: "title", widget: "text"},
+              {label: "Slider List", name: "list", widget: "list", fields: [
+                {label: "Slider List Item", name: "items", widget: "list", fields: [
+                  {label: "Img", name: "img", widget: "image"},
+                  {label: "Img alt", name: "img-alt", widget: "text"},
+                  {label: "Title", name: "title", widget: "text"}
+                ]}
+              ]}
+            ]}
+          - {label: "Slider 2", name: "slider-2", widget: "list", fields: [
+              {label: "Slider Title", name: "title", widget: "text"},
+              {label: "Slider List", name: "list", widget: "list", fields: [
+                {label: "Slider List Item", name: "items", widget: "list", fields: [
+                  {label: "Img", name: "img", widget: "image"},
+                  {label: "Img alt", name: "img-alt", widget: "text"},
+                  {label: "Title", name: "title", widget: "text"}
+                ]}
+              ]}
+            ]}
+          - {label: "Service", name: "has_service", widget: "boolean", default: true}
+          - {label: "Service", name: "service-h", widget: "boolean", default: true}
+          - {label: "Background Servuce", name: "background", widget: "image", default: "/assets/img/service_bg.jpg"}
+          - {label: "Service Title", name: "title", widget: "text", default: "our services"}
+          - {label: "Service", name: "service", widget: "list", fields: [
+              {label: "Slider Title", name: "title", widget: "text"},
+              {label: "Service Icon", name: "img", widget: "image"},
+              {label: "Service Icon alt", name: "img-alt", widget: "text"},
+              {label: "Service List Item", name: "list", widget: "list", fields: [
+                {label: "Service Icon", name: "img", widget: "image"},
+                {label: "Service Icon alt", name: "img-alt", widget: "text"},
+                {label: "Service Content", name: "content", widget: "markdown"}
+              ]}
+            ]}
+          - {label: "Location Title", name: "location-title", widget: "text", default: "location"}
+          - {label: "Resident Title", name: "resident-title", widget: "text", default: "Contact us"}
+          - {label: "Resident List", name: "resident", widget: "list", fields: [
+              {label: "Img", name: "img", widget: "image"},
+              {label: "Img alt", name: "img-alt", widget: "text"}
+            ]}
+          - {label: "Сomunity Title", name: "comunity-title", widget: "text", default: "Comunity"}
+          - {label: "Team Title", name: "team-title", widget: "text", default: "the team"}
+          - {label: "Team Content", name: "team-content", widget: "markdown"}
+          - {label: "Footer Logo", name: "footer_logo", widget: "image"}
+          - {label: "Footer Logo right", name: "footer_logo_img_right_new", widget: "image"}
+          - {label: "Footer Logo right 2", name: "footer_logo_img_right", widget: "image"}
+          - {label: "Footer url hzahav", name: "footer_url-hzahav", widget: "text"}
+          - {label: "Footer url", name: "footer_url-right", widget: "text"}
+          - {label: "Footer Nav", name: "footer_nav", widget: "list", fields: [
+              {label: "Nav Link", name: "list", widget: "text"},
+              {label: "Nav Img", name: "img", widget: "image"},
+              {label: "Nav Text", name: "text", widget: "text"}
+            ]}

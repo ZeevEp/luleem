@@ -1,0 +1,53 @@
+has_work: true
+work: true
+
+background: "/assets/img/work.jpg"
+logo_img: "/assets/img/Lulleem_logo.svg"
+title-cont: |
+  **"Luleem"** is the center of business activity in **Gush Etsion**. It allows you to move your operation to a **modern co-working space** . Fit for companies and individuals. 
+
+
+slider: 
+  - title: "For work"
+    list: 
+      - items: 
+          - img: ["/assets/img/calendar_icon.svg", "calendar_icon"] 
+            title: "Events"
+          - img: ["/assets/img/education_icon.svg", "education_icon"] 
+            title: "Workshops"
+          - img: ["/assets/img/advisor_icon.svg", "advisor_icon"] 
+            title: "Mentorship Programs"
+          - img: ["/assets/img/projector_icon.svg", "projector_icon"] 
+            title: "Projector"
+      - items: 
+          - img: ["/assets/img/communiti_icon.svg", "communiti_icon"]
+            title: "Community App"
+          - img: ["/assets/img/printer_icon.svg", "printer_icon"]
+            title: "Printer"
+          - img: ["/assets/img/scanner_icon.svg", "scanner_icon"]
+            title: "Scanner"
+          - img: ["/assets/img/photocopier_icon.svg", "photocopier_icon"]
+            title: "Photocopier"
+
+
+slider-2:
+  - title: "For work"
+    list: 
+      - items: 
+          - img: ["/assets/img/table_icon.svg", "table_icon"] 
+            title: "Outdoor Terrace"
+          - img: ["/assets/img/Lounge area_icon.svg", "Lounge area_icon"] 
+            title: "Chill-out Area"
+          - img: ["/assets/img/sleep_icon.svg", "sleep_icon"] 
+            title: "Nap Room"
+          - img: ["/assets/img/table-tennis_icon.svg", "table-tennis_icon"] 
+            title: "Ping Pong Table"
+      - items: 
+          - img: ["/assets/img/Gym_icon.svg", "Gym_icon"]
+            title: "Gym"
+          - img: ["/assets/img/stove_icon.svg", "stove_icon"]
+            title: "Kitchen"
+          - img: ["/assets/img/lockers_icon.svg", "lockers_icon"] 
+            title: "Personal Lockers"
+          - img: ["/assets/img/shower_icon.svg", "shower_icon"] 
+            title: "Showers"

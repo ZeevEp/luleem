@@ -1,0 +1,15 @@
+<head>    
+    <title>{% assign title_is_not_empty = page.title | is_not_empty %}{% if title_is_not_empty %}{{ page.title }} - {% endif %}{{ site.title }}</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% seo %}
+    <link rel="stylesheet" href="{{ site.baseurl }}{{ 'assets/main.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ site.baseurl }}{{ 'assets/css/slick.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ site.baseurl }}{{ 'assets/css/slick-theme.css' | relative_url }}">
+    {% feed_meta %}
+    {% if jekyll.environment == 'production' and site.google_analytics %}
+      {% include google-analytics.html %}
+    {% endif %}
+    <script src="https://identity-js.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>

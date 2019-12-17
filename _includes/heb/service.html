@@ -1,0 +1,73 @@
+<section id="services" class="service">
+        {% assign service = h_url %}
+        <img  class="service_img" src="{{ site.baseurl }}{{ service.background | relative_url }}" alt="service img">
+        <div class="service_content">
+            <div class="container">
+                <h2 class="service_content_title">{{ service.title }}</h2>
+                <div class="row">
+                    <div class="service_content_header">
+                        {% for service in service.service  %}
+                            <div class="service_content_header_list">
+                                <div class="service_content_header_list_top">
+                                    <img class="service_content_header_list_top_img" src="{{ service.img }}" alt="{{ service.img-alt }}">
+                                    <h2 class="service_content_header_list_top_title">{{ service.title }}</h2>
+                                </div>
+                                {% for list in service.list  %}
+                                    <div class="service_content_header_list_cont">
+                                        <img class="service_content_header_list_img" src="{{ site.baseurl }}{{ list.img }}" alt="{{ list.img-alt }}">
+                                        <div class="service_content_header_list_info">
+                                            {{ list.content | markdownify }}
+                                        </div>
+                                    </div>
+                                {%  endfor %}
+                            </div>
+                        {%  endfor %}
+                    </div>
+                </div>
+                <h2 id="map" class="service_content_location_title">{{ service.location-title }}</h2>
+            </div>
+            <div class="service_content_maps" id="map">
+                <div class="row">
+                    <div class="service_content_maps_cont">
+                        <div class="service_content_maps_cont_list service_content_maps_cont_list1">
+                                <div class="service_content_maps_cont_list_active_close"></div>
+                                <img src="{{ site.baseurl }}/assets/img/map_1.jpg" alt="map_1">
+                                <iframe class="service_content_maps_cont_list_modal" src="https://www.google.com/maps/embed?pb=!1m30!1m8!1m3!1d108657.38757708525!2d35.0636625!3d31.6737106!3m2!1i1024!2i768!4f13.1!4m19!3e0!4m5!1s0x1502d7d634c1fc4b%3A0xd96f623e456ee1cb!2z0JjQtdGA0YPRgdCw0LvQuNC8LCDQmNC30YDQsNC40LvRjA!3m2!1d31.768318999999998!2d35.21371!4m5!1s0x1502dc328631ebf5%3A0xb5f7ff55a2a6a22f!2sKfar%20Ezion!3m2!1d31.649486!2d35.115234!4m5!1s0x1502c45df5bbfddf%3A0x72382400b6db947d!2zQmV0IFNoZW1lc2ggRW5naW5lcyBMdGQuLCBWaXJnaW5pYSBTdHJlZXQsINCR0LXQudGCLdCo0LXQvNC10YgsINCY0LfRgNCw0LjQu9GM!3m2!1d31.7382411!2d34.9566562!5e0!3m2!1sen!2sua!4v1575416643350!5m2!1sen!2sua"   frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                        </div>
+                        <div class="service_content_maps_cont_list service_content_maps_cont_list2">
+                                <div class="service_content_maps_cont_list_active_close"></div>
+                                <img src="{{ site.baseurl }}/assets/img/Map_2.png" alt="map_1">
+                                <iframe class="service_content_maps_cont_list_modal" src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d13584.199032427594!2d35.13034138291304!3d31.65985840236428!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x1502dc328631ebf5%3A0xb5f7ff55a2a6a22f!2sKfar%20Ezion!3m2!1d31.649486!2d35.115234!4m5!1s0x1502d7d634c1fc4b%3A0xd96f623e456ee1cb!2sJerusalem%2C%20Israel!3m2!1d31.768318999999998!2d35.21371!5e0!3m2!1sen!2sua!4v1575418488087!5m2!1sen!2sua" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <h2 class="service_content_location_title service_content_resident_title">{{ service.resident-title }}</h2>
+                <div class="service_content_resident">
+                    <div class="service_content_resident_row resident">
+                        {{ service.resident.title }}
+                        {% for list in service.resident %}
+                            <div class="service_content_resident_row_column {% if  list.img!="false" %} mobile_nonehz {% else %} mobile_none {% endif %}">
+                            {% if  list.img!="false" %}
+                                <img src="{{ site.baseurl }}{{ list.img }}" alt="{{ list.img-alt }}">
+                            {% endif %}
+                            </div>
+                        {%  endfor %}
+                    </div>
+                </div>
+                <!-- <h2 class="service_content_location_title service_content_comunity_title">{{ service.comunity-title }}</h2>
+                <div class="service_content_comunity_cont">
+                    <video class="service_content_comunity_video" autoplay poster="{{ site.baseurl }}/assets/img/comunity.jpg">
+                            <source src="{{ site.baseurl }}{{h_url.video}}"
+                            type="video/mp4">
+                    </video>
+                </div>
+                <h2 class="service_content_location_title service_content_team_title">{{ service.team-title }}</h2>
+                <div class="service_content_team_content">
+                    {{ service.team-content |  markdownify }}
+                </div> -->
+            </div>
+        </div>
+    </section>
+    

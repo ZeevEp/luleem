@@ -1,0 +1,243 @@
+logo_img:       "./assets/img/Lulleem_logo.svg"
+logo_img_right: "./assets/img/logo-right.svg"
+logo_img_right_new: "./assets/img/new_logo.svg"
+has_nav: true
+url-hzahav: "http://www.hzahav.co.il/"
+url-right: "/"
+
+nav:
+  - list: "Services" 
+    list-link: "#services"
+  - list: "Amenities" 
+    list-link: "#amenities"
+  - list: "About" 
+    list-link: "#about"
+  - list: "A map" 
+    list-link: "#map"
+
+
+sub-nav:
+  - list: "/assets/img/facebook-logo.svg" 
+    list-link: "https://www.facebook.com/Luleem4/"
+  - list: "/assets/img/instagram.svg" 
+    list-link: "#home"
+  - list: "/assets/img/awaze.svg"
+    list-link: "https://waze.com/ul/hsv8up44zd"
+
+number_phone: "tel:02-9930123"
+phone-img: "/assets/img/phone_icon.svg"
+phone-text: "call us 02-9930123"
+
+has_home: true
+my_video: true
+video-img: /assets/img/Video_background.jpg
+video: "/assets/video/videoplayback.mp4"
+
+has_contact: true
+contact: true
+action: ""
+name: "name"
+phone-nunber: "phone number"
+button-text: "Contact us"
+
+
+bottom_action: ""
+bottom_name: "Your name"
+bottom_phone-nunber: "Your Phone number"
+bottom_button-text: "Contact us"
+
+
+
+has_work: true
+work: true
+
+background: "/assets/img/work.jpg"
+work_logo_img: "/assets/img/Lulleem_logo.svg"
+title-cont: |
+  **"Luleem"** is the center of business activity in **Gush Etsion**. It allows you to move your operation to a **modern co-working space** . Fit for companies and individuals. 
+
+
+slider: 
+  - title: "For work"
+    list: 
+      - items: 
+          - img: "/assets/img/calendar_icon.svg" 
+            img-alt: "calendar_icon"
+            title: "Events"
+          - img: "/assets/img/education_icon.svg"  
+            img-alt: "education_icon"
+            title: "Workshops"
+          - img: "/assets/img/advisor_icon.svg"  
+            img-alt: "advisor_icon"                                  
+            title: "Mentorship Programs"
+          - img: "/assets/img/projector_icon.svg"  
+            img-alt: "projector_icon"
+            title: "Projector"
+      - items: 
+          - img: "/assets/img/communiti_icon.svg"
+            img-alt: "communiti_icon"
+            title: "Community App"
+          - img: "/assets/img/printer_icon.svg" 
+            img-alt: "printer_icon"
+            title: "Printer"
+          - img: "/assets/img/scanner_icon.svg" 
+            img-alt: "scanner_icon"
+            title: "Scanner"
+          - img: "/assets/img/photocopier_icon.svg"
+            img-alt: "photocopier_icon"
+            title: "Photocopier"
+
+
+slider-2:
+  - title: "For work"
+    list: 
+      - items: 
+          - img: "/assets/img/table_icon.svg" 
+            img-alt: "table_icon"
+            title: "Outdoor Terrace"
+          - img: "/assets/img/Lounge area_icon.svg"  
+            img-alt: "Lounge area_icon"
+            title: "Chill-out Area"
+          - img: "/assets/img/sleep_icon.svg" 
+            img-alt: "sleep_icon"
+            title: "Nap Room"
+          - img: "/assets/img/table-tennis_icon.svg"  
+            img-alt: "table-tennis_icon"
+            title: "Ping Pong Table"
+      - items: 
+          - img: "/assets/img/Gym_icon.svg" 
+            img-alt: "Gym_icon"
+            title: "Gym"
+          - img: "/assets/img/stove_icon.svg" 
+            img-alt: "stove_icon"
+            title: "Kitchen"
+          - img: "/assets/img/lockers_icon.svg"  
+            img-alt: "lockers_icon"
+            title: "Personal Lockers"
+          - img: "/assets/img/shower_icon.svg" 
+            img-alt: "shower_icon"
+            title: "Showers"
+
+
+
+has_service: true
+service-h: true
+
+background: "/assets/img/service_bg.jpg"
+title: "our services"
+
+
+
+service: 
+  - title: "Rent"
+    img: "/assets/img/rent_icon.svg" 
+    img-alt: "rent_icon"
+    list: 
+      - img: "/assets/img/Luleem_Kfar-Etzion.jpg" 
+        img-alt: "Luleem_Kfar-Etzion" 
+        content: |
+          ### Offices
+          Price from 99,99
+      - img: "/assets/img/cube_pic.jpg" 
+        img-alt: "cube_pic" 
+        content: |
+          ### Cube
+          Price from 99,99
+      - img: "/assets/img/Luleem__Kfar-Etzion.jpg"  
+        img-alt: "Luleem__Kfar-Etzion" 
+        content: |
+          ### Table
+          Price from 99,99
+  - title: "Events"
+    img: "/assets/img/team_icon.svg"  
+    img-alt: "team_icon" 
+    list: 
+      - img: "/assets/img/Lulim_Kfar-Etzion_-_27.jpg"  
+        img-alt: "Lulim_Kfar-Etzion_-_27" 
+        content: |
+          ### Meeting rooms
+          Price from 99,99
+      - img: "/assets/img/Luleem_Kfar-Etzion-16b.jpg"  
+        img-alt: "Luleem_Kfar-Etzion-16b" 
+        content: |
+          ### Bigger Event
+          Price from 99,99
+      - img: "/assets/img/ME8_9397.jpg" 
+        img-alt: "ME8_9397" 
+        content: |
+          ### Big Event
+          Price from 99,99
+
+
+location-title: "location" 
+resident-title: "our residents"
+
+
+
+resident: 
+      - img: "/assets/img/at.svg" 
+        img-alt: "at"
+      - img: "/assets/img/aviva.svg" 
+        img-alt: "at"
+      - img: "/assets/img/sm.svg" 
+        img-alt: "at"
+      - img: "/assets/img/nz.svg" 
+        img-alt: "at"
+      - img: "/assets/img/lmz.svg" 
+        img-alt: "at"
+      - img: "/assets/img/good.svg" 
+        img-alt: "at"
+      - img: "/assets/img/fun.svg" 
+        img-alt: "at"
+      - img: "/assets/img/ectorate.svg" 
+        img-alt: "at"
+      - img: "/assets/img/shalem.svg" 
+        img-alt: "at"
+      - img: "/assets/img/dov.svg" 
+        img-alt: "at"
+      - img: "/assets/img/artivulate.svg" 
+        img-alt: "at"
+      - img: "/assets/img/ziv.svg" 
+        img-alt: "at"
+      - img: "/assets/img/roz.svg" 
+        img-alt: "at"
+      - img: "/assets/img/my_or.svg" 
+        img-alt: "at"
+      - img: "/assets/img/home.svg" 
+        img-alt: ""
+      - img: "false"
+      - img: "false"  
+      - img: "false"
+      - img: "false"
+      - img: "false"
+      - img: "false"
+
+comunity-title: "Comunity"
+
+
+team-title: "the team"
+team-content: |
+    ### About Us
+    The Community	Luleem is a space for inspiration and work where the outdoors encounters the indoors – a place where entrepreneurship and community meet, and the kind of environment that’s conducive to creativity, thought, and the development of new ideas.
+     
+    The Community	Luleem is a space for inspiration and work where the outdoors encounters the indoors – a place where entrepreneurship and community meet, and the kind of environment that’s conducive to creativity, thought, and the development of new ideas. 
+
+footer_logo: "/assets/img/Lulleem_logo.svg"
+footer_logo_img_right_new: "/assets/img/new_logo.svg"
+footer_logo_img_right: "/assets/img/logo-right.svg"
+
+footer_url-hzahav: "http://www.hzahav.co.il/"
+footer_url-right: "/"
+
+
+
+footer_nav:
+  - list: "https://www.facebook.com/Luleem4/"
+    img: "/assets/img/facebook-logo.svg" 
+  - list: "#" 
+    img: "/assets/img/instagram.svg"
+  - list: "https://waze.com/ul/hsv8up44zd" 
+    img: "/assets/img/awaze.svg"
+  - list: "tel:02-9930123" 
+    text: "02-9930123"
+

@@ -1,0 +1,24 @@
+<section id="about" class="work">
+    {% assign work = h_url %}
+    <img  class="work_img" src="{{ site.baseurl }}{{ work.background | relative_url }}" alt="work img">
+    <div class="work_content">
+        <div class="container">
+            <div class="work_content_header">
+                <img class="work_content_header_logo" src="{{ site.baseurl }}{{ work.work_logo_img | relative_url }}" alt="work logo">
+                <div class="work_content_header_title-cont">
+                    {{ work.title-cont | markdownify }}
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            {% if work.slider %}
+                {% assign src = work.slider %}
+                {% include english/slider.html class="one-time" %}
+            {% endif%}
+            {% if work.slider-2 %}
+                {% assign src = work.slider-2 %}
+                {% include english/slider.html class="one-time-2" %}
+            {% endif%}
+        </div>
+    </div>
+</section>

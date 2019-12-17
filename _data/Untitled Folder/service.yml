@@ -1,0 +1,78 @@
+has_service: true
+service: true
+
+background: "/assets/img/service_bg.jpg"
+title: "our services"
+
+
+
+service: 
+  - title: "Rent"
+    img: ["/assets/img/rent_icon.svg", "rent_icon"] 
+    list: 
+      - img: ["/assets/img/Luleem_Kfar-Etzion.jpg", "Luleem_Kfar-Etzion"] 
+        content: |
+          ### Offices
+          Price from 99,99
+      - img: ["/assets/img/cube_pic.jpg", "cube_pic"]
+        content: |
+          ### Cube
+          Price from 99,99
+      - img: ["/assets/img/Luleem__Kfar-Etzion.jpg", "Luleem__Kfar-Etzion"] 
+        content: |
+          ### Table
+          Price from 99,99
+  - title: "Events"
+    img: ["/assets/img/team_icon.svg", "team_icon"] 
+    list: 
+      - img: ["/assets/img/Lulim_Kfar-Etzion_-_27.jpg", "Lulim_Kfar-Etzion_-_27"] 
+        content: |
+          ### Meeting rooms
+          Price from 99,99
+      - img: ["/assets/img/Luleem_Kfar-Etzion-16b.jpg", "Luleem_Kfar-Etzion-16b"] 
+        content: |
+          ### Bigger Event
+          Price from 99,99
+      - img: ["/assets/img/ME8_9397.jpg", "ME8_9397"] 
+        content: |
+          ### Big Event
+          Price from 99,99
+
+
+location-title: "location" 
+resident-title: "our residents"
+
+
+
+resident: 
+      - img: ["/assets/img/at.svg","at"]
+      - img: ["/assets/img/aviva.svg","aviva"]
+      - img: ["/assets/img/sm.svg","sm"]
+      - img: ["/assets/img/nz.svg","nz"]
+      - img: ["/assets/img/lmz.svg","lmz"]
+      - img: ["/assets/img/good.svg","good"]
+      - img: ["/assets/img/fun.svg","fun"]
+      - img: ["/assets/img/ectorate.svg","ectorate"]
+      - img: ["/assets/img/shalem.svg","shalem"]
+      - img: ["/assets/img/dov.svg","dov"]
+      - img: ["/assets/img/artivulate.svg","artivulate"]
+      - img: ["/assets/img/ziv.svg","ziv"]
+      - img: ["/assets/img/roz.svg","roz"]
+      - img: ["/assets/img/my_or.svg","my_or"]
+      - img: ["/assets/img/home.svg","home"]
+      - img: "false"
+      - img: "false"  
+      - img: "false"
+      - img: "false"
+      - img: "false"
+      - img: "false"
+
+comunity-title: "Comunity"
+
+
+team-title: "the team"
+team-content: |
+    ### About Us
+    The Community	Luleem is a space for inspiration and work where the outdoors encounters the indoors – a place where entrepreneurship and community meet, and the kind of environment that’s conducive to creativity, thought, and the development of new ideas.
+     
+    The Community	Luleem is a space for inspiration and work where the outdoors encounters the indoors – a place where entrepreneurship and community meet, and the kind of environment that’s conducive to creativity, thought, and the development of new ideas. 

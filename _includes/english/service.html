@@ -1,0 +1,590 @@
+<section id="services" class="service">
+    {% assign service = h_url %}
+    <img  class="service_img" src="{{ site.baseurl }}{{ service.background | relative_url }}" alt="service img">
+    <div class="service_content">
+        <div class="container">
+            <h2 class="service_content_title">{{ service.title }}</h2>
+            <div class="row">
+                <div class="service_content_header">
+                    {% for service in service.service  %}
+                        <div class="service_content_header_list">
+                            <div class="service_content_header_list_top">
+                                <img class="service_content_header_list_top_img" src="{{ service.img }}" alt="{{ service.img-alt }}">
+                                <h2 class="service_content_header_list_top_title">{{ service.title }}</h2>
+                            </div>
+                            {% for list in service.list  %}
+                                <div class="service_content_header_list_cont">
+                                    <img class="service_content_header_list_img" src="{{ site.baseurl }}{{ list.img }}" alt="{{ list.img-alt }}">
+                                    <div class="service_content_header_list_info">
+                                        {{ list.content | markdownify }}
+                                    </div>
+                                </div>
+                            {%  endfor %}
+                        </div>
+                    {%  endfor %}
+                </div>
+            </div>
+            <h2 id="map" class="service_content_location_title">{{ service.location-title }}</h2>
+        </div>
+        <div class="service_content_maps" id="map">
+            <div class="row">
+                <div class="service_content_maps_cont">
+                    <div class="service_content_maps_cont_list service_content_maps_cont_list1">
+                            <div class="service_content_maps_cont_list_active_close"></div>
+                            <img src="{{ site.baseurl }}/assets/img/map_1.jpg" alt="map_1">
+                            <div id="map_canvas" class="service_content_maps_cont_list_modal"></div>
+                            <!-- <iframe class="service_content_maps_cont_list_modal" src="https://maps.googleapis.com/maps/api/staticmap?key=api&center=31.763479511194344,35.18931662865293&zoom=13&format=png&maptype=roadmap&style=element:geometry%7Ccolor:0x212121&style=element:labels.icon%7Cvisibility:off&style=element:labels.text.fill%7Ccolor:0x757575&style=element:labels.text.stroke%7Ccolor:0x212121&style=feature:administrative%7Celement:geometry%7Ccolor:0x757575&style=feature:administrative.country%7Celement:labels.text.fill%7Ccolor:0x9e9e9e&style=feature:administrative.land_parcel%7Cvisibility:off&style=feature:administrative.locality%7Celement:labels.text.fill%7Ccolor:0xbdbdbd&style=feature:poi%7Celement:labels.text.fill%7Ccolor:0x757575&style=feature:poi.park%7Celement:geometry%7Ccolor:0x181818&style=feature:poi.park%7Celement:labels.text.fill%7Ccolor:0x616161&style=feature:poi.park%7Celement:labels.text.stroke%7Ccolor:0x1b1b1b&style=feature:road%7Celement:geometry.fill%7Ccolor:0x2c2c2c&style=feature:road%7Celement:labels.text.fill%7Ccolor:0x8a8a8a&style=feature:road.arterial%7Celement:geometry%7Ccolor:0x373737&style=feature:road.highway%7Celement:geometry%7Ccolor:0x3c3c3c&style=feature:road.highway.controlled_access%7Celement:geometry%7Ccolor:0x4e4e4e&style=feature:road.local%7Celement:labels.text.fill%7Ccolor:0x616161&style=feature:transit%7Celement:labels.text.fill%7Ccolor:0x757575&style=feature:water%7Celement:geometry%7Ccolor:0x000000&style=feature:water%7Celement:labels.text.fill%7Ccolor:0x3d3d3d&size=480x360&signature=mUu_QhEXTMlbPu3_1jA5PCikO2c="   frameborder="0" style="border:0;" allowfullscreen=""></iframe> -->
+                    </div>
+                    <div class="service_content_maps_cont_list service_content_maps_cont_list2">
+                            <div class="service_content_maps_cont_list_active_close"></div>
+                            <img src="{{ site.baseurl }}/assets/img/Map_2.png" alt="map_1">
+                            <div id="map_canvas2" class="service_content_maps_cont_list_modal"></div>
+                            <!-- <iframe class="service_content_maps_cont_list_modal" src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d13584.199032427594!2d35.13034138291304!3d31.65985840236428!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x1502dc328631ebf5%3A0xb5f7ff55a2a6a22f!2sKfar%20Ezion!3m2!1d31.649486!2d35.115234!4m5!1s0x1502d7d634c1fc4b%3A0xd96f623e456ee1cb!2sJerusalem%2C%20Israel!3m2!1d31.768318999999998!2d35.21371!5e0!3m2!1sen!2sua!4v1575418488087!5m2!1sen!2sua" frameborder="0" style="border:0;" allowfullscreen=""></iframe> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <h2 class="service_content_location_title service_content_resident_title">{{ service.resident-title }}</h2>
+            <div class="service_content_resident">
+                <div class="service_content_resident_row resident">
+                    {{ service.resident.title }}
+                    {% for list in service.resident %}
+                        <div class="service_content_resident_row_column {% if  list.img!="false" %} mobile_nonehz {% else %} mobile_none {% endif %}">
+                        {% if  list.img!="false" %}
+                            <img src="{{ site.baseurl }}{{ list.img }}" alt="{{ list.img-alt }}">
+                        {% endif %}
+                        </div>
+                    {%  endfor %}
+                </div>
+            </div>
+            <!-- <h2 class="service_content_location_title service_content_comunity_title">{{ service.comunity-title }}</h2>
+            <div class="service_content_comunity_cont">
+                <video class="service_content_comunity_video" autoplay poster="{{ site.baseurl }}/assets/img/comunity.jpg">
+                        <source src="{{ site.baseurl }}{{h_url.video}}"
+                        type="video/mp4">
+                </video>
+            </div>
+            <h2 class="service_content_location_title service_content_team_title">{{ service.team-title }}</h2>
+            <div class="service_content_team_content">
+                {{ service.team-content |  markdownify }}
+            </div> -->
+        </div>
+    </div>
+</section>
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyDz1UtGGJQ-P9H_5DYWzNUprNEzwZPsJPo"></script>
+ 
+
+    <script>
+    function initMap() {
+        let latlng = new google.maps.LatLng(31.71438451557213, 35.09921655678471);
+  // State custom styles
+
+  let styles = [
+  {
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#111111"
+      }
+    ]
+  },
+  {
+    "elementType": "labels.icon",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+  {
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#757575"
+      }
+    ]
+  },
+  {
+    "elementType": "labels.text.stroke",
+    "stylers": [
+      {
+        "color": "#212121"
+      }
+    ]
+  },
+  {
+    "featureType": "administrative",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#757575"
+      }
+    ]
+  },
+  {
+    "featureType": "administrative.country",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#9e9e9e"
+      }
+    ]
+  },
+  {
+    "featureType": "administrative.land_parcel",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+  {
+    "featureType": "administrative.locality",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#bdbdbd"
+      }
+    ]
+  },
+  {
+    "featureType": "poi",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#757575"
+      }
+    ]
+  },
+  {
+    "featureType": "poi.park",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#181818"
+      }
+    ]
+  },
+  {
+    "featureType": "poi.park",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#616161"
+      }
+    ]
+  },
+  {
+    "featureType": "poi.park",
+    "elementType": "labels.text.stroke",
+    "stylers": [
+      {
+        "color": "#1b1b1b"
+      }
+    ]
+  },
+  {
+    "featureType": "road",
+    "elementType": "geometry.fill",
+    "stylers": [
+      {
+        "color": "#2c2c2c"
+      }
+    ]
+  },
+  {
+    "featureType": "road",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#8a8a8a"
+      }
+    ]
+  },
+  {
+    "featureType": "road.arterial",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#373737"
+      }
+    ]
+  },
+  {
+    "featureType": "road.highway",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#3c3c3c"
+      }
+    ]
+  },
+  {
+    "featureType": "road.highway.controlled_access",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#4e4e4e"
+      }
+    ]
+  },
+  {
+    "featureType": "road.local",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#616161"
+      }
+    ]
+  },
+  {
+    "featureType": "transit",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#757575"
+      }
+    ]
+  },
+  {
+    "featureType": "water",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#000000"
+      }
+    ]
+  },
+  {
+    "featureType": "water",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#3d3d3d"
+      }
+    ]
+  }
+]
+
+let myOptions = {
+    zoom: 12,
+    center: latlng,
+    styles: styles
+
+    // mapTypeId: google.maps.MapTypeId.featureOpts
+  };
+
+
+  let map = new google.maps.Map(
+    document.getElementById("map_canvas"),
+    myOptions
+  );
+  let image = {
+    url: '{{ site.baseurl }}/assets/img/Ellipse.svg',
+    size: new google.maps.Size(30, 30)
+  };
+  let myMarker = new google.maps.Marker({
+    position: {lat: 31.652750009802137, lng: 35.116472199999976},
+    map: map,
+    icon: image,
+    animation: google.maps.Animation.DROP,
+    title: "Lulem",
+     
+  });
+
+  let image2 = {
+    url: '{{ site.baseurl }}/assets/img/Logoeclipse.png',
+    size: new google.maps.Size(120, 45)
+  };
+  let myMarker2 = new google.maps.Marker({
+    position: {lat: 31.663750019802137, lng: 35.090472199999976},
+    map: map,
+    icon: image2,
+    animation: google.maps.Animation.DROP,
+    title: "Lulem",
+     
+  });
+  
+  var myMarker3 = new google.maps.Marker({
+    position: {lat: 31.748057266680268, lng: 34.98792611710819},
+    map: map,
+    icon: image,
+    animation: google.maps.Animation.DROP,
+    title: "Lulem",
+     
+  });
+  let myMarker4 = new google.maps.Marker({
+    position: {lat: 31.75457721903336, lng: 35.21182642006596},
+    map: map,
+    icon: image,
+    animation: google.maps.Animation.DROP,
+    title: "Lulem",
+     
+  });
+
+
+  google.maps.event.addDomListener(window, "resize", function() {
+    let center = map.getCenter();
+    google.maps.event.trigger(map, "resize");
+    map.setCenter(center);
+  });
+}
+
+function initMap2() {
+    let latlng = new google.maps.LatLng(31.656114719468636, 35.116196653793004);
+  // State custom styles
+
+  let styles = [
+  {
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#111111"
+      }
+    ]
+  },
+  {
+    "elementType": "labels.icon",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+  {
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#757575"
+      }
+    ]
+  },
+  {
+    "elementType": "labels.text.stroke",
+    "stylers": [
+      {
+        "color": "#212121"
+      }
+    ]
+  },
+  {
+    "featureType": "administrative",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#757575"
+      }
+    ]
+  },
+  {
+    "featureType": "administrative.country",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#9e9e9e"
+      }
+    ]
+  },
+  {
+    "featureType": "administrative.land_parcel",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+  {
+    "featureType": "administrative.locality",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#bdbdbd"
+      }
+    ]
+  },
+  {
+    "featureType": "poi",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#757575"
+      }
+    ]
+  },
+  {
+    "featureType": "poi.park",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#181818"
+      }
+    ]
+  },
+  {
+    "featureType": "poi.park",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#616161"
+      }
+    ]
+  },
+  {
+    "featureType": "poi.park",
+    "elementType": "labels.text.stroke",
+    "stylers": [
+      {
+        "color": "#1b1b1b"
+      }
+    ]
+  },
+  {
+    "featureType": "road",
+    "elementType": "geometry.fill",
+    "stylers": [
+      {
+        "color": "#2c2c2c"
+      }
+    ]
+  },
+  {
+    "featureType": "road",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#8a8a8a"
+      }
+    ]
+  },
+  {
+    "featureType": "road.arterial",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#373737"
+      }
+    ]
+  },
+  {
+    "featureType": "road.highway",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#3c3c3c"
+      }
+    ]
+  },
+  {
+    "featureType": "road.highway.controlled_access",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#4e4e4e"
+      }
+    ]
+  },
+  {
+    "featureType": "road.local",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#616161"
+      }
+    ]
+  },
+  {
+    "featureType": "transit",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#757575"
+      }
+    ]
+  },
+  {
+    "featureType": "water",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#000000"
+      }
+    ]
+  },
+  {
+    "featureType": "water",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#3d3d3d"
+      }
+    ]
+  }
+]
+
+let myOptions = {
+    zoom: 15,
+    center: latlng,
+    styles: styles
+
+    // mapTypeId: google.maps.MapTypeId.featureOpts
+  };
+
+
+  let map = new google.maps.Map(
+    document.getElementById("map_canvas2"),
+    myOptions
+  );
+  let image = {
+    url: '{{ site.baseurl }}/assets/img/Ellipse.svg',
+    size: new google.maps.Size(30, 30)
+  };
+  let myMarker = new google.maps.Marker({
+    position: {lat: 31.652750009802137, lng: 35.116472199999976},
+    map: map,
+    icon: image,
+    animation: google.maps.Animation.DROP,
+    title: "Lulem",
+     
+  });
+
+  let image2 = {
+    url: '{{ site.baseurl }}/assets/img/Logoeclipse.png',
+    size: new google.maps.Size(120, 45)
+  };
+  let myMarker2 = new google.maps.Marker({
+    position: {lat: 31.65400508146599, lng: 35.113214037368444},
+    map: map,
+    icon: image2,
+    animation: google.maps.Animation.DROP,
+    title: "Lulem",
+     
+  });
+  
+  let myMarker3 = new google.maps.Marker({
+    position: {lat: 31.748057266680268, lng: 34.98792611710819},
+    map: map,
+    icon: image,
+    animation: google.maps.Animation.DROP,
+    title: "Lulem",
+     
+  });
+  let myMarker4 = new google.maps.Marker({
+    position: {lat: 31.75457721903336, lng: 35.21182642006596},
+    map: map,
+    icon: image,
+    animation: google.maps.Animation.DROP,
+    title: "Lulem",
+     
+  });
+
+
+  google.maps.event.addDomListener(window, "resize", function() {
+    let center = map.getCenter();
+    google.maps.event.trigger(map, "resize");
+    map.setCenter(center);
+  });
+}
+google.maps.event.addDomListener(window, "load", initMap);
+google.maps.event.addDomListener(window, "load", initMap2);
+    </script>

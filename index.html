@@ -1,0 +1,30 @@
+---
+layout: body
+---
+
+{% assign data = site.data %}
+{% assign h_url = data.home-en %}
+
+
+{% if h_url.has_home and  h_url.video  %}
+  {% include english/home.html %}
+{% endif  %}
+
+{% if h_url.has_contact and  h_url.contact  %}
+  {% include english/contact.html %}
+{% endif  %}
+
+{% if h_url.has_work and  h_url.work  %}
+  {% include english/work.html  %}
+{% endif  %}
+
+{% if h_url.has_service and  h_url.service-h  %}
+  {% include english/service.html %}
+{% endif  %}
+
+{% if h_url.has_contact and  h_url.contact  %}
+  {% include english/contact2.html %}
+{% endif  %}
+
+
+
