@@ -185,6 +185,18 @@ resident:
     img-alt: alt
   - img: /assets/img/home.svg
     img-alt: alt
+  - img: /assets/img/empty.png
+    img-alt: alt
+  - img: /assets/img/empty.png
+    img-alt: alt
+  - img: /assets/img/empty.png
+    img-alt: alt
+  - img: /assets/img/empty.png
+    img-alt: alt
+  - img: /assets/img/empty.png
+    img-alt: alt
+  - img: /assets/img/empty.png
+    img-alt: alt
 comunity-title: Comunity
 team-title: the team
 team-content: >-
