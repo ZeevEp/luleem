@@ -228,6 +228,6 @@ footer_nav:
   - img: /assets/img/awaze.svg
     list: 'https://waze.com/ul/hsv8up44zd'
     text: ' '
-  - img: /assets/img/new_logo.png
+  - img: /assets/img/empty.png
     list: 'tel:02-9930123'
     text: 02-9930123
