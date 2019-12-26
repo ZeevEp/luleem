@@ -29,11 +29,13 @@ video-img: /assets/img/Video_background.jpg
 video: /assets/video/videoplayback.mp4
 has_contact: true
 contact: true
-action: /
+action: >-
+  https://gmail.us3.list-manage.com/subscribe/post?u=83fbbe49fea524327ac2067c9&amp;id=b1e240d65e
 name: name
 phone-nunber: phone number
 button-text: Contact us
-bottom_action: /2
+bottom_action: >-
+  https://gmail.us3.list-manage.com/subscribe/post?u=83fbbe49fea524327ac2067c9&amp;id=b1e240d65e
 bottom_name: Your name
 bottom_phone-nunber: Your Phone number
 bottom_button-text: Contact us
