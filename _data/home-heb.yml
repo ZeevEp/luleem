@@ -4,7 +4,6 @@ logo_img_right_new: "./assets/img/new_logo.svg"
 has_nav: true
 url-hzahav: "http://www.hzahav.co.il/"
 url-right: "/"
-
 nav:
   - list: "Services" 
     list-link: "#services"
@@ -14,8 +13,6 @@ nav:
     list-link: "#about"
   - list: "A map" 
     list-link: "#map"
-
-
 sub-nav:
   - list: "/assets/img/facebook-logo.svg" 
     list-link: "https://www.facebook.com/Luleem4/"
@@ -23,38 +20,31 @@ sub-nav:
     list-link: "#home"
   - list: "/assets/img/awaze.svg"
     list-link: "https://waze.com/ul/hsv8up44zd"
-
 number_phone: "tel:02-9930123"
 phone-img: "/assets/img/phone_icon.svg"
 phone-text: "call us 02-9930123"
-
 has_home: true
 my_video: true
 video-img: /assets/img/Video_background.jpg
 video: "/assets/video/videoplayback.mp4"
-
 has_contact: true
 contact: true
 action: ""
 name: "name"
 phone-nunber: "phone number"
 button-text: "Contact us"
-
-
 bottom_action: ""
 bottom_name: "Your name"
 bottom_phone-nunber: "Your Phone number"
 bottom_button-text: "Contact us"
-
-
-
 has_work: true
 work: true
-
-background: "/assets/img/work.jpg"
+bacground: "/assets/img/work.jpg"
 work_logo_img: "/assets/img/Lulleem_logo.svg"
 title-cont: |
   **"Luleem"** is the center of business activity in **Gush Etsion**. It allows you to move your operation to a **modern co-working space** . Fit for companies and individuals. 
+
+
 
 
 slider: 
@@ -86,8 +76,6 @@ slider:
           - img: "/assets/img/photocopier_icon.svg"
             img-alt: "photocopier_icon"
             title: "Photocopier"
-
-
 slider-2:
   - title: "For work"
     list: 
@@ -117,17 +105,10 @@ slider-2:
           - img: "/assets/img/shower_icon.svg" 
             img-alt: "shower_icon"
             title: "Showers"
-
-
-
 has_service: true
 service-h: true
-
 background: "/assets/img/service_bg.jpg"
 title: "our services"
-
-
-
 service: 
   - title: "Rent"
     img: "/assets/img/rent_icon.svg" 
@@ -167,13 +148,8 @@ service:
         content: |
           ### Big Event
           Price from 99,99
-
-
 location-title: "location" 
 resident-title: "our residents"
-
-
-
 resident: 
       - img: "/assets/img/at.svg" 
         img-alt: "at"
@@ -211,17 +187,13 @@ resident:
       - img: "false"
       - img: "false"
       - img: "false"
-
 comunity-title: "Comunity"
-
-
 team-title: "the team"
 team-content: |
     ### About Us
     The Community	Luleem is a space for inspiration and work where the outdoors encounters the indoors – a place where entrepreneurship and community meet, and the kind of environment that’s conducive to creativity, thought, and the development of new ideas.
      
     The Community	Luleem is a space for inspiration and work where the outdoors encounters the indoors – a place where entrepreneurship and community meet, and the kind of environment that’s conducive to creativity, thought, and the development of new ideas. 
-
 footer_logo: "/assets/img/Lulleem_logo.svg"
 footer_logo_img_right_new: "/assets/img/new_logo.svg"
 footer_logo_img_right: "/assets/img/logo-right.svg"
